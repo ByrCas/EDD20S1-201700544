@@ -7,13 +7,43 @@ Byron Gerardo Castillo Gómez
 public class Principal{
 
     public static void main(String[] args){
-        //leemos la entrada de la dimensión:
+        Scanner lector_opcion = new Scanner(System.in);
         Scanner lector_info = new Scanner(System.in);
-        System.out.println("Ingrese una dimensión para la matriz cuadrada: ");
-        int dimension_elegida = lector_info.nextInt();
-        lector_info.close();
-        //dimensionamos la matriz:
-        dimensionar_matriz(dimension_elegida);
+        String opcion_elegida; int opcion_transformada = 0;
+        String dimension_elegida; int dimension_transformada = 0;
+        do {
+            System.out.println("Elija una opción:");
+            System.out.println("1. Dimensionar Matriz");
+            System.out.println("2. Salir");
+            try {
+                opcion_elegida = lector_opcion.nextLine();
+                opcion_transformada = castearStringaInt(opcion_elegida);
+                switch(opcion_transformada){
+                        case 1 :
+                            //leemos la entrada de la dimensión:
+                            System.out.println("Ingrese una dimensión para la matriz cuadrada: ");
+                            try {
+                                dimension_elegida = lector_info.nextLine();
+                                dimension_transformada = castearStringaInt(dimension_elegida);
+                                //dimensionamos la matriz:
+                                dimensionar_matriz(dimension_transformada);
+                            } catch (Exception e) {
+                                System.out.println("Valor inadecuado, Debe introducir una dimensión numérica!!");
+                            }
+                        break;
+                        case 2:
+                            System.out.println("Fin del programa...");
+                            lector_opcion.close();
+                            lector_info.close();
+                        break;
+                        default:
+                             System.out.println("Valor inadecuado, elija una opción presente en el menú");
+                             break;
+                }
+            } catch (Exception exc) {
+                System.out.println("Por favor ingrese una opción numérica correspondiente a las opciones del menú");
+            }
+        }while(opcion_transformada != 2);
      }
 
      public static void dimensionar_matriz(int dimension){
@@ -56,7 +86,13 @@ public class Principal{
         }
         System.out.print("\n");
      }
+
+     public static int castearStringaInt(String opcion){
+       int nuevo_entero = Integer.parseInt(opcion);
+       return nuevo_entero;
+    }
+    
 }
 
-
+   
     
