@@ -37,6 +37,10 @@ public class ListaSimple{
         public int contarNodos(){
             return cuentaNodos;
         }
+
+        public NodoSimple obtenerEncabezador(){
+            return this.encabezador;
+        }
         
         
         public Usuario obtenerUsuarioNodo(int ubicacion){

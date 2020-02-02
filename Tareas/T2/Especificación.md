@@ -28,13 +28,13 @@
     * Modifica: Lista de usuarios.
     * Efecto: incorpora un nuevo usuario o dueño.
 
-* **trasladar(cantidad:entero, usuario_ex:Usuario)** 
+* **trasladar(cantidad:entero, id_usuario:Caracteres)** 
     * Requerimiento: La cantidad debe ser mayor a 0, de tipo entero.
     * Modifica: Monedero y la cantidad de Monedas al respectivo usuario.
     * Efecto: Se reduce la cantidad del monedero y aumenta la del respectivo usuario.
 
 * **transferir(id_usuario_1, id_usuario_2:Caracteres, cantidad:entero)** 
-    * Requerimiento: El usuario que transfiere debe contar con esa cantidad, ambos usjuarios deben existir.
+    * Requerimiento: El usuario que transfiere debe contar con esa cantidad, ambos usuarios deben existir.
     * Modifica: la cantidad de monedas de ambos usuarios.
     * Efecto: Se reduce la cantidad del usuario que transfiere y se aumenta la cantidad al usuario destino.
 
