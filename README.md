@@ -2,6 +2,8 @@
 
 ## Descripción :scroll:
 * T1: Dada una matriz M*M rellenar todas sus celdas de los bordes con el número 1.
+* T2: Crear la especificación informal de un TDA de una “Moneda” y luego crear su
+implementación.
 
 ## Construido con 🛠️
 
