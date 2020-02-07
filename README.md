@@ -4,12 +4,14 @@
 * T1: Dada una matriz M*M rellenar todas sus celdas de los bordes con el número 1.
 * T2: Crear la especificación informal de un TDA de una “Moneda” y luego crear su
 implementación.
+* T3: Implementación de una Lista Simple enlazada.
 
 ## Construido con 🛠️
 
 * :bookmark_tabs: [VS Code] - Editor utilizado.
 * :wrench: [JDK] - Herramientas de desarrollo para la creación de programas en Java.
 * :hotsprings: [Java Extension Pack] - Extensión de Java para VS Code.
+* :bookmark_tabs: [C/C++ Intellisense] - Extensión de C/C++ para VS Code.
 
 ## Autor ✒️
 
