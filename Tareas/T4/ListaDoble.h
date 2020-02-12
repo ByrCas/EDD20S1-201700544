@@ -94,7 +94,11 @@ class ListaDoble{
                         encabezador->asignarAnterior(nuevo_elemento);
                         encabezador = nuevo_elemento; 
                         contador_nodos = contador_nodos +1;
-                        //pendiente de analizar
+                        /*guardamos momentaneamente en encabezado en 
+                        un puntero, asignamos al siguiente del nuevo
+                        en elncabezado, al anterior de encabezado el nuevo, 
+                        y actualizamos quién es el nuevo encabezador
+                        incrementando la cuenta actual*/
                 }
             }
 
@@ -142,6 +146,10 @@ class ListaDoble{
             delete(finalizador);
             finalizador = momentaneo;
             contador_nodos = contador_nodos - 1;
+            /*nos posicionamos en el penúltimo y lo guardamos, 
+            asignamos un null al puntero que dirige al penúltimo,
+            borramos en memoria finalizador, y le asigamos el penúltimo
+            restando la cuenta de nodos*/
             }
 
             void EliminarPrimero(){
@@ -163,6 +171,10 @@ class ListaDoble{
                         momentaneo = momentaneo->obtenerSiguiente();
                     }
                 }
+                /*Nos desplazamos por toda la lista, si encontramos
+                que el char guardado es igual al primer caracter
+                del parámetro devolvemos el nodo y quiebra, si no 
+                se seguirá desplazando*/
             }
 
             void imprimirUltimo(){
