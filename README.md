@@ -5,6 +5,7 @@
 * T2: Crear la especificación informal de un TDA de una “Moneda” y luego crear su
 implementación.
 * T3: Implementación de una Lista Simple enlazada.
+* T4: Implementación de una Lista Doble enlazada.
 
 ## Construido con 🛠️
 
